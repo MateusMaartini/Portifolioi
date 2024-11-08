@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at center, #0e0e10, #000000);
+  color: #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1rem 2rem;
+}
+
+.navbar-logo {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar-menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.navbar-menu a:hover {
+  color: #f4f4f9;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.project-card {
+  width: 300px;
+
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  /* Expande o cartão para altura completa */
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.project-info {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.project-info h3 {
+  font-size: 1.25rem;
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+
+.project-info p {
+  font-size: 0.9rem;
+  color: #555;
+  flex-grow: 1;
+  /* Expande a descrição para ocupar o máximo de espaço */
+  margin-bottom: 1rem;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-stack span {
+  background-color: #e0e0e0;
+  color: #333;
+  font-size: 0.8rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px;
+}
